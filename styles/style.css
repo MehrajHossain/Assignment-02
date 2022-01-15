@@ -2,9 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Poppins:wght@400;500&family=Titillium+Web:wght@300;400;600;700&display=swap');
 
 /* common styles or utilities*/
+
+* {
+  margin: 0;
+  }
+  
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -94,16 +100,24 @@ section {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   padding: 15px;
+  line-height: 36px;
 }
 .product-img {
   width: 300px;
   height: 256px;
+}
+.product-price {
+  font-size: 24px;
 }
 .product-rating {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 122px;
+}
+.product-rating span {
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 .fa-star, .fa-star-half-alt {
@@ -123,4 +137,36 @@ section {
 .see-more a {
   font-weight:300;
   color: #E02C6D;
+}
+
+
+/* =========
+  FOOTER
+==========*/
+
+
+footer {
+  padding: 5px;
+  text-align: center;
+  background-color: #0a0826;
+  color: white;
+  width: 100%;
+  margin-top: 200px;
+  line-height: 30px;
+}
+
+footer h2 {
+  font-weight: bolder;
+  line-height: 50px;
+  
+}
+footer p {
+  font-size: 10px;
+}
+.social-icon a {
+  text-decoration: none;
+  color:#ffffff;
+  padding-right: 5px;
+  font-size: 25px;
+  line-height: 50px;
 }
