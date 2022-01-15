@@ -1,0 +1,126 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Poppins:wght@400;500&family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+/* common styles or utilities*/
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: 400;
+}
+
+/* Navigation section */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 60px 0 60px 120px;
+}
+
+span {
+  display: flex;
+  align-items: center;
+}
+nav span a {
+  text-decoration: none;
+  color: #3A3A3A;
+  font-size: 16px;
+  margin-right: 36px;
+  font-weight: bold;
+}
+.nav-title, .fas {
+  font-size: 24px;
+
+}
+/* MAIN SECTION */
+
+.influencer-journey {
+  display: flex;
+}
+.influencer-details {
+  width: 50%;
+  padding: 0 120px;
+}
+.influencer-img {
+  width: 50%;
+}
+.influencer-img img {
+  display: block;
+  margin: auto;
+  width: 8       0%;
+
+}
+
+.prebook {
+  display: flex;
+  justify-content: space-around;
+  background: #E02C6D;
+  padding: 10px 10px;
+  margin: 40px 0;
+  border-radius: 41px;
+  color: white;
+  width: 190px;
+  
+  
+}
+.link-button {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+/* PRODUCT SECTION  */
+
+section {
+  position: relative;
+}
+
+.product-title {
+  text-align: center;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 30px 196px;
+}
+.product{
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 15px;
+}
+.product-img {
+  width: 300px;
+  height: 256px;
+}
+.product-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 122px;
+}
+
+.fa-star, .fa-star-half-alt {
+  color: #FFC014;
+}
+
+/* NEXT PAGE */
+
+.see-more {
+  position: absolute;
+  bottom: -100px;
+  right: 190px;
+  color: #E02C6D;
+  background-color: #ffffff;
+  width: 120px;
+}
+.see-more a {
+  font-weight:300;
+  color: #E02C6D;
+}
