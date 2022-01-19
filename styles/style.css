@@ -27,6 +27,7 @@ nav {
   padding: 60px 0 60px 120px;
 }
 
+
 nav span {
   display: flex;
   align-items: center;
@@ -61,7 +62,7 @@ nav span a {
 
 }
 .influencer-img:hover {
-  transform: scale(1.5) skew(-20deg);
+  transform: scale(1.5) rotate(30deg);
   transition: 2s ease-in-out;
 }
 
@@ -93,7 +94,10 @@ section {
 
 .product-title {
   text-align: center;
+  padding: 30px 0;
+  font-size: 26px;
 }
+
 .products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -170,18 +174,49 @@ footer p {
 .social-icon a {
   text-decoration: none;
   color:#ffffff;
-  padding-right: 5px;
   font-size: 25px;
-  line-height: 50px;
+  padding-right: 15px;
+  line-height: 60px;
 }
+.social-icon a:last-child {
+  padding: 0;
+}
+/* Media Queries  */
 
- /* Media Queries  */
 /* Mobile device */
 @media only screen and (max-width:688px) {
-  h1 {
-    font-size: 35px;
-    font-weight: 600;
+  nav{
+    padding: 1px;
+    /* flex-wrap: wrap; */
+    /* row-gap: 40px; */
+    justify-content: space-between;
   }
+
+  nav span  {
+    justify-content: space-between;
+    
+  }
+  nav span a {
+    margin: 0;
+    align-items: center;
+  }
+
+  nav span:first-child {
+    display: none;
+  }
+  
+  nav span a:nth-child(5), nav span a:nth-child(6) {
+    display: none;
+  }
+  
+  /* nav span a {
+    margin-right: 5px;
+    font-size: 15px;
+  }
+  */
+
+  /* INFLUENCER SECTION */
+
   .influencer-journey {
     flex-direction: column;
   }
@@ -191,23 +226,15 @@ footer p {
   .influencer-img {
     width: 100%;
   }
+  .influencer-img img {
+    width: 100%;
+  }
   .influencer-details {
-    padding: 0 50px;
-  }
-  nav{
-    padding: 1px;
-  }
-  .nav-title {
-    display: none;
-  }
-  nav span {
-    justify-content: space-between;
+    padding: 0 40px;
+    width: 85%;
+    margin-top: 50px;
   }
   
-  nav span a {
-    margin-right: 5px;
-    font-size: 15px;
-  }
   
   .products {
     grid-template-columns: repeat(1, 1fr);
@@ -229,7 +256,7 @@ footer p {
   }
   
   .influencer-img img {
-    width: 70%;
+    width: 100%;
   }
   .influencer-details {
     padding: 0 70px;
